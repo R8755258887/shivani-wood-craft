@@ -1271,12 +1271,13 @@ PREMIUM MARKETPLACE CARDS
 =========================================*/
 
 .market-icons{
-    display:grid;
-    grid-template-columns:repeat(4,minmax(90px,1fr));
+    display:flex;
+    justify-content:space-between;
     gap:12px;
 }
 
 .market-card{
+    flex:1;
     height:125px;
     border-radius:30px;
     display:flex;
@@ -1362,25 +1363,16 @@ ORDER POPUP
 }
 
 .popup-content{
-
-    width:420px;
+    width:500px;
     max-width:95%;
-
     background:#171717;
-
     border:2px solid #FFD700;
-
     border-radius:22px;
-
-    padding:25px;
+    padding:15px;
     max-height:85vh;
-overflow-y:auto;
-
+    overflow-y:auto;
     box-shadow:0 0 40px rgba(255,215,0,.25);
-
     animation:popup .35s ease;
-    
-
 }
 
 @keyframes popup{
@@ -1401,6 +1393,26 @@ opacity:1;
 
 }
 
+}
+.whatsapp-wide{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    width:90%;
+margin:0 auto 15px;
+    height:60px;
+    margin-bottom:15px;
+    border-radius:30px;
+    background:linear-gradient(135deg,#00994d,#25D366);
+    color:#fff;
+    text-decoration:none;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.whatsapp-wide i{
+    font-size:30px;
 }
 
 .popup-content h2{
