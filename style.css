@@ -63,7 +63,7 @@ HEADER
 .logo h2{
 
     font-family:'Cinzel', serif;
-    font-size:42px;
+    font-size:36px;
     font-weight:800;
     letter-spacing:1px;
 
@@ -98,7 +98,12 @@ HEADER
 
 
 .logo img{
-    width:45px;
+    width:75px;
+    height:75px;
+    border-radius:50%;
+    object-fit:cover;
+    border:2px solid #FFD700;
+    box-shadow:0 0 15px rgba(255,215,0,.4);
 }
 
 .logo{
