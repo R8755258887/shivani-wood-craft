@@ -529,14 +529,37 @@ function goToProductsSearch(e){
 
     if(e.key === "Enter"){
 
-        let value = document.getElementById("homeSearch").value.trim();
+        const searchBox = document.getElementById("homeSearch");
+        let value = searchBox.value.trim();
 
         if(value !== ""){
+
+            // Search box clear kar do
+            searchBox.value = "";
+
+            // Products page open karo
             window.location.href =
-            "product.html?search=" +
-            encodeURIComponent(value);
+                "product.html?search=" + encodeURIComponent(value);
+
         }
 
     }
 
 }
+const menuToggle = document.getElementById("menuToggle");
+const mobileMenu = document.getElementById("mobileMenu");
+
+menuToggle.onclick = function () {
+    mobileMenu.classList.toggle("active");
+};
+document.querySelectorAll("#mobileMenu a").forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        setTimeout(() => {
+            mobileMenu.classList.remove("active");
+        }, 500);
+
+    });
+
+});
