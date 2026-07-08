@@ -563,3 +563,75 @@ document.querySelectorAll("#mobileMenu a").forEach(link => {
     });
 
 });
+
+// ==========================
+// REVIEW SYSTEM
+// ==========================
+
+let selectedProduct = "";
+
+function openReview(productName){
+
+    selectedProduct = productName;
+
+    document.getElementById("reviewPopup").style.display = "flex";
+
+}
+
+function closeReview(){
+
+    document.getElementById("reviewPopup").style.display = "none";
+
+}
+
+function sendReview(){
+
+    const name =
+    document.getElementById("reviewName").value.trim();
+
+    const stars =
+    document.getElementById("reviewStars").value;
+
+    const review =
+    document.getElementById("reviewText").value.trim();
+
+    if(name==="" || review===""){
+
+        alert("Please fill all fields.");
+
+        return;
+
+    }
+
+    const message =
+`🌟 New Customer Review
+
+Product : ${selectedProduct}
+
+Name : ${name}
+
+Rating : ${stars}
+
+Review :
+
+${review}`;
+
+    window.open(
+
+"https://wa.me/918755258887?text=" +
+
+encodeURIComponent(message),
+
+"_blank"
+
+);
+
+    document.getElementById("reviewName").value="";
+
+    document.getElementById("reviewText").value="";
+
+    document.getElementById("reviewStars").selectedIndex=0;
+
+    closeReview();
+
+}
