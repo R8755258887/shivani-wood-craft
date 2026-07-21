@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://r8755258887.github.io/shivani-wood-craft/sitemap.xml
