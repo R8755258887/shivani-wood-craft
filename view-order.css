@@ -1,0 +1,158 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#111;
+    color:#fff;
+    padding:30px;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+}
+
+h1{
+    color:#FFD700;
+    margin-bottom:25px;
+}
+
+.card{
+
+    background:#1d1d1d;
+
+    border-radius:12px;
+
+    padding:25px;
+
+    margin-bottom:20px;
+
+}
+
+.card h2{
+
+    color:#FFD700;
+
+    margin-bottom:15px;
+
+}
+
+.info{
+
+    margin:8px 0;
+
+    font-size:17px;
+
+}
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:20px;
+
+}
+
+th{
+
+    background:#FFD700;
+
+    color:#111;
+
+    padding:12px;
+
+}
+
+td{
+
+    padding:12px;
+
+    text-align:center;
+
+    border-bottom:1px solid #333;
+
+}
+
+.total{
+
+    margin-top:20px;
+
+    text-align:right;
+
+    font-size:24px;
+
+    color:#FFD700;
+
+    font-weight:bold;
+
+}
+
+.status{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border-radius:20px;
+
+    background:#ff9800;
+
+    color:#fff;
+
+    font-weight:bold;
+
+    margin-top:15px;
+
+}
+
+.backBtn{
+
+    margin-top:25px;
+
+    padding:14px 30px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#FFD700;
+
+    color:#111;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+}
+
+.backBtn:hover{
+
+    background:#ffcc00;
+
+}
+.product-img{
+    width:80px;
+    height:80px;
+    object-fit:cover;
+    border-radius:10px;
+    border:2px solid #FFD700;
+    background:#fff;
+}
+
+.stock{
+    color:#4CAF50;
+    font-weight:bold;
+}
+
+.delivery{
+    color:#FFD700;
+    font-weight:bold;
+}

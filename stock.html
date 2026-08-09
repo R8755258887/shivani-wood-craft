@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Stock Management</title>
+
+<link rel="stylesheet" href="stock.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>📦 Stock Management</h1>
+
+<div class="top-bar">
+
+<input
+type="text"
+id="searchStock"
+placeholder="Search Product...">
+
+<button onclick="loadStock()">
+
+🔄 Refresh
+
+</button>
+
+</div>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Image</th>
+
+<th>Code</th>
+
+<th>Product</th>
+
+<th>Price</th>
+
+<th>Stock</th>
+
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody id="stockTable">
+
+</tbody>
+
+</table>
+
+</div>
+
+<script type="module" src="stock.js"></script>
+
+</body>
+
+</html>

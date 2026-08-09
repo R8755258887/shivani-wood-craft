@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Manage Products | Shivani Wood Craft</title>
+
+<link rel="stylesheet" href="manage-products.css">
+
+</head>
+
+<body>
+
+<div class="container">
+    <div class="top-buttons">
+
+    <button class="backBtn"
+    onclick="window.location.href='dashboard.html'">
+    ← Back
+</button>
+
+    <button class="addBtn"
+        onclick="window.location.href='add-product.html'">
+        + Add Product
+    </button>
+
+</div>
+
+    <h1>📦 Manage Products</h1>
+
+    <input
+        type="text"
+        id="searchBox"
+        placeholder="Search Product...">
+
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th>Image</th>
+                <th>Code</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Action</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody id="productTable">
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<script type="module" src="manage-products.js"></script>
+
+</body>
+
+</html>
