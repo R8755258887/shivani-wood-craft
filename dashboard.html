@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Shivani Wood Craft</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+<div class="dashboard-box">
+
+    <h1>SHIVANI WOOD CRAFT</h1>
+
+    <h2>Admin Dashboard</h2>
+
+    <p>Welcome Admin</p>
+    <button
+    id="addProductBtn"
+    onclick="window.location.href='add-product.html'">
+    Add Product
+</button>
+
+<button
+    id="manageProductBtn"
+    onclick="window.location.href='manage-products.html'">
+    📦 Manage Products
+</button>
+<button onclick="location.href='orders.html'">
+    🛒 View Orders
+</button>
+<button onclick="window.location.href='purchase.html'">
+    📦 Purchase
+</button>
+
+</div>
+
+<script type="module">
+import { auth } from "./firebase.js";
+import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-auth.js";
+
+onAuthStateChanged(auth, (user) => {
+
+    if (!user) {
+        window.location.href = "admin.html";
+    }
+
+});
+</script>
+
+</body>
+</html>
