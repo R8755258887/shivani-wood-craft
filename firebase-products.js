@@ -36,8 +36,8 @@ export async function loadFirebaseProducts() {
       description: data.description || "",
 
       image: data.image
-        ? `images/images/${data.image}`
-        : "images/no-image.png",
+  ? data.image
+  : "images/no-image.png",
 
       stock: "🟢 In Stock",
       delivery: "🚚 Free Delivery"
