@@ -1,0 +1,167 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#111;
+    color:#fff;
+    padding:30px;
+}
+
+.container{
+    max-width:1500px;
+    margin:auto;
+}
+
+h1{
+    color:#FFD700;
+    margin-bottom:25px;
+}
+
+.top-bar{
+    display:flex;
+    gap:15px;
+    margin-bottom:20px;
+    flex-wrap:wrap;
+}
+
+#searchOrder,
+#statusFilter{
+
+    flex:1;
+    min-width:250px;
+
+    padding:14px;
+
+    font-size:16px;
+
+    border:none;
+
+    border-radius:8px;
+
+    outline:none;
+
+}
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:#1d1d1d;
+
+}
+
+th{
+
+    background:#FFD700;
+
+    color:#111;
+
+    padding:15px;
+
+}
+
+td{
+
+    padding:14px;
+
+    text-align:center;
+
+    border-bottom:1px solid #333;
+
+}
+
+tbody tr:hover{
+
+    background:#222;
+
+}
+
+.status{
+
+    padding:6px 14px;
+
+    border-radius:20px;
+
+    font-weight:bold;
+
+}
+
+.pending{
+    background:#ff9800;
+    color:#fff;
+}
+
+.packed{
+    background:#03a9f4;
+    color:#fff;
+}
+
+.shipped{
+    background:#9c27b0;
+    color:#fff;
+}
+
+.delivered{
+    background:#4caf50;
+    color:#fff;
+}
+
+.cancelled{
+    background:#f44336;
+    color:#fff;
+}
+
+.viewBtn{
+
+    background:#FFD700;
+
+    color:#111;
+
+    border:none;
+
+    padding:8px 18px;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+}
+
+.viewBtn:hover{
+
+    background:#ffcc00;
+
+}
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.header h1{
+    margin:0;
+}
+
+.backBtn{
+    background:#FFD700;
+    color:#000;
+    border:none;
+    padding:12px 24px;
+    border-radius:8px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.backBtn:hover{
+    background:#ffcc00;
+}

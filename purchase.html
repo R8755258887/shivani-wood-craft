@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Purchase Management</title>
+
+    <link rel="stylesheet" href="purchase.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="page-header">
+
+        <h1>📦 Purchase Management</h1>
+
+        <button onclick="history.back()" class="back-btn">
+            ← Back
+        </button>
+
+    </div>
+
+    <!-- Purchase Entry -->
+
+    <div class="card">
+
+        <h2>New Purchase Entry</h2>
+
+        <div class="form-grid">
+
+            <div class="form-group">
+
+                <label>Search Product</label>
+
+                <input
+                    type="text"
+                    id="productSearch"
+                    placeholder="Search by Product Code or Product Name"
+                    autocomplete="off">
+
+                <div id="productList" class="product-list"></div>
+
+                <input
+                    type="hidden"
+                    id="selectedProduct">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Supplier</label>
+
+                <select id="supplier">
+
+                    <option value="">Select Supplier</option>
+
+                </select>
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Purchase Bill No.</label>
+
+                <input
+                    type="text"
+                    id="billNo"
+                    placeholder="Enter Bill Number">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Purchase Date</label>
+
+                <input
+                    type="date"
+                    id="purchaseDate">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Purchase Qty</label>
+
+                <input
+                    type="number"
+                    id="qty"
+                    placeholder="Enter Quantity">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Purchase Price</label>
+
+                <input
+                    type="number"
+                    id="purchasePrice"
+                    placeholder="Purchase Price">
+
+            </div>
+
+        </div>
+
+        <!-- Product Preview -->
+
+        <div class="product-preview">
+
+            <img
+                id="previewImage"
+                src="logo.png"
+                alt="Product">
+
+            <div>
+
+                <h3 id="previewName">
+                    Select Product
+                </h3>
+
+                <p>
+
+                    <b>Code :</b>
+
+                    <span id="previewCode">-</span>
+
+                </p>
+
+                <p>
+
+                    <b>Current Stock :</b>
+
+                    <span id="previewStock">0</span>
+
+                </p>
+
+                <p>
+
+                    <b>Selling Price :</b>
+
+                    ₹<span id="previewPrice">0</span>
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="form-group full">
+
+            <label>Remarks</label>
+
+            <textarea
+                id="remarks"
+                rows="3"
+                placeholder="Write Remarks (Optional)">
+            </textarea>
+        </div>
+
+        <div class="button-group">
+
+            <button
+                class="save-btn"
+                onclick="savePurchase()">
+
+                💾 Save Purchase
+
+            </button>
+
+            <button
+                class="clear-btn"
+                onclick="clearForm()">
+
+                🔄 Clear
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Purchase History -->
+
+    <div class="card">
+
+        <div class="history-header">
+
+            <h2>Purchase History</h2>
+
+            <input
+                type="text"
+                id="historySearch"
+                placeholder="Search Purchase History">
+
+        </div>
+
+        <div class="table-area">
+
+            <table>
+
+                <thead>
+
+                <tr>
+
+                    <th>Date</th>
+
+                    <th>Bill No</th>
+
+                    <th>Supplier</th>
+
+                    <th>Code</th>
+
+                    <th>Product</th>
+
+                    <th>Qty</th>
+
+                    <th>Purchase Price</th>
+
+                    <th>Total</th>
+
+                    <th>Stock</th>
+
+                    <th>Action</th>
+
+                </tr>
+
+                </thead>
+
+                <tbody id="history">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script type="module" src="purchase.js"></script>
+
+</body>
+
+</html>

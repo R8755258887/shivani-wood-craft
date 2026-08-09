@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Orders | Shivani Wood Craft</title>
+
+<link rel="stylesheet" href="orders.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+
+    <h1>🛒 Orders Management</h1>
+
+    <button class="backBtn"
+        onclick="window.location.href='dashboard.html'">
+        ← Back
+    </button>
+
+</div>
+
+    <div class="top-bar">
+
+        <input
+            type="text"
+            id="searchOrder"
+            placeholder="Search Order / Customer / Mobile">
+
+        <select id="statusFilter">
+
+    <option value="">📋 All Orders</option>
+
+    <optgroup label="Order Status">
+        <option value="pending">🟡 Pending</option>
+        <option value="confirmed">🔵 Confirmed</option>
+        <option value="packed">📦 Packed</option>
+        <option value="shipped">🚚 Shipped</option>
+        <option value="delivered">✅ Delivered</option>
+        <option value="cancelled">❌ Cancelled</option>
+    </optgroup>
+
+    <optgroup label="Sort Customer">
+        <option value="az">🔤 Customer A-Z</option>
+        <option value="za">🔠 Customer Z-A</option>
+    </optgroup>
+
+</select>
+
+    </div>
+
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th>Order ID</th>
+                <th>Date</th>
+                <th>Customer</th>
+                <th>Mobile</th>
+                <th>Total</th>
+                <th>Status</th>
+                <th>Action</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody id="ordersTable">
+
+            <tr>
+
+                <td colspan="7" style="text-align:center;">
+                    Loading Orders...
+                </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<script type="module" src="orders.js"></script>
+
+</body>
+
+</html>
