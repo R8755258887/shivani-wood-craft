@@ -2267,4 +2267,328 @@ SHARE POPUP
     background:#FFD700;
     color:#111;
 }
+/* =========================================
+   FINAL MOBILE FIX - SHIVANI WOOD CRAFT
+   ========================================= */
 
+@media (max-width: 768px){
+
+    html, body{
+        width:100%;
+        max-width:100%;
+        overflow-x:hidden;
+    }
+
+    /* HEADER */
+    .header{
+        width:100%;
+        display:grid !important;
+        grid-template-columns:1fr 55px;
+        align-items:center;
+        gap:10px;
+        padding:10px 12px;
+    }
+
+    /* LOGO */
+    .logo{
+        grid-column:1;
+        grid-row:1;
+        display:flex !important;
+        align-items:center;
+        gap:8px;
+        min-width:0;
+    }
+
+    .logo img{
+        width:42px;
+        height:42px;
+        flex-shrink:0;
+    }
+
+    .logo h2{
+        font-size:18px;
+        line-height:1;
+        white-space:nowrap;
+        overflow:hidden;
+        text-overflow:ellipsis;
+    }
+
+    /* CART */
+    .cart-icon{
+        grid-column:2;
+        grid-row:1;
+        width:50px;
+        height:50px;
+        margin:0;
+        justify-self:end;
+    }
+
+    .cart-icon i{
+        font-size:22px;
+    }
+
+    #cart-count{
+        width:22px;
+        height:22px;
+        font-size:11px;
+        top:-4px;
+        right:-4px;
+    }
+
+    /* SEARCH */
+    .search-box{
+        grid-column:1 / -1;
+        grid-row:2;
+        width:100% !important;
+        max-width:none !important;
+        margin:0 !important;
+    }
+
+    .search-box input{
+        width:100%;
+        height:46px;
+        font-size:14px;
+        padding:0 15px 0 45px;
+        border-radius:25px;
+    }
+
+    .search-box i{
+        left:15px;
+        font-size:18px;
+    }
+
+    /* SORT */
+    .sort-box{
+        grid-column:1 / -1;
+        grid-row:3;
+        width:100%;
+        margin:0;
+    }
+
+    #sortProducts{
+        width:100%;
+        height:44px;
+        font-size:14px;
+    }
+
+    /* PAGE TITLE */
+    .page-title{
+        padding:35px 15px 25px;
+    }
+
+    .page-title h1{
+        font-size:32px;
+        line-height:1.2;
+    }
+
+    .page-title p{
+        font-size:15px;
+    }
+
+    /* MAIN PRODUCT AREA */
+    .products-page{
+        width:94%;
+        margin:0 auto 40px;
+        display:flex;
+        flex-direction:column;
+        gap:20px;
+    }
+
+    /* PREVIEW */
+    .preview-panel{
+        width:100%;
+        min-width:100%;
+        position:relative;
+        top:0;
+        padding:15px;
+        border-radius:18px;
+    }
+
+    .preview-image{
+        width:100%;
+        aspect-ratio:1;
+    }
+
+    .preview-info h2{
+        font-size:22px;
+    }
+
+    .product-code{
+        font-size:15px;
+    }
+
+    .product-price{
+        font-size:30px;
+    }
+
+    /* PRODUCT GRID */
+    .products-container{
+        width:100%;
+        display:grid;
+        grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+        gap:12px;
+    }
+
+    /* PRODUCT CARD */
+    .product-card{
+        width:100%;
+        min-width:0;
+        border-radius:16px;
+    }
+
+    .product-card img{
+        width:100%;
+        aspect-ratio:1;
+        object-fit:cover;
+    }
+
+    .product-info{
+        padding:12px 8px;
+    }
+
+    .product-info h3{
+        font-size:15px;
+        min-height:auto;
+        line-height:1.3;
+        margin-bottom:8px;
+    }
+
+    .product-info p{
+        font-size:12px;
+    }
+
+    .product-info h4{
+        font-size:21px;
+        margin:10px 0;
+    }
+
+    .rating{
+        font-size:12px;
+        letter-spacing:1px;
+    }
+
+    .stock{
+        font-size:12px;
+        margin-bottom:10px;
+    }
+
+    /* VIEW + ADD BUTTONS */
+    .product-actions{
+        display:flex;
+        flex-direction:column;
+        gap:7px;
+    }
+
+    .product-actions button{
+        width:100%;
+        height:42px;
+        font-size:12px;
+        border-radius:22px;
+    }
+
+    .product-actions button i{
+        font-size:12px;
+        margin-right:5px;
+    }
+
+    /* CART */
+    .cart-panel{
+        width:100%;
+        max-width:100%;
+    }
+
+    /* POPUPS */
+    .popup-content{
+        width:94%;
+        max-width:94%;
+        max-height:88vh;
+        padding:18px;
+    }
+
+    #enquiryPopup .popup-content{
+        width:94%;
+        max-width:94%;
+        padding:20px;
+    }
+
+    #enquiryPopup h2{
+        font-size:25px;
+        margin-bottom:25px;
+    }
+
+    .enquiry-buttons{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .whatsapp-btn,
+    .email-btn{
+        width:100%;
+        height:50px;
+        font-size:17px;
+    }
+
+    .share-box{
+        width:94%;
+        max-width:94%;
+        padding:20px;
+    }
+
+    .share-buttons{
+        grid-template-columns:1fr;
+        gap:10px;
+    }
+
+    /* TOP BUTTON */
+    #topBtn{
+        width:48px;
+        height:48px;
+        right:15px;
+        bottom:15px;
+        font-size:20px;
+    }
+}
+
+
+/* VERY SMALL PHONES */
+@media (max-width: 380px){
+
+    .logo h2{
+        font-size:15px;
+    }
+
+    .logo img{
+        width:38px;
+        height:38px;
+    }
+
+    .cart-icon{
+        width:46px;
+        height:46px;
+    }
+
+    .products-page{
+        width:96%;
+    }
+
+    .products-container{
+        gap:8px;
+    }
+
+    .product-info{
+        padding:10px 6px;
+    }
+
+    .product-info h3{
+        font-size:14px;
+    }
+
+    .product-info h4{
+        font-size:19px;
+    }
+
+    .product-actions button{
+        height:38px;
+        font-size:11px;
+    }
+}
